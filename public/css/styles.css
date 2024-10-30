@@ -1,0 +1,115 @@
+:root {
+    --color-primario: #003366;
+    --color-secundario: #007bff;
+    --color-terciario: #00509e;
+    --color-fondo: #f0f8ff;
+    --color-blanco: #ffffff;
+    --color-exito: #cce5ff;
+    --color-error: #f8d7da;
+    --color-error-texto: #721c24;
+    --fuente-base: 16px;
+    --espaciado: 1rem;
+    --radio-borde: 8px;
+    --sombra-base: 0 4px 20px rgba(0, 0, 0, 0.1);
+    --duracion-transicion: 0.3s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--color-fondo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    background-color: var(--color-blanco);
+    padding: var(--espaciado);
+    border-radius: var(--radio-borde);
+    box-shadow: var(--sombra-base);
+}
+
+h1, h2 {
+    color: var(--color-primario);
+    text-align: center;
+    margin-bottom: var(--espaciado);
+}
+
+a.button, input[type="submit"], button {
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: var(--radio-borde);
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color var(--duracion-transicion), transform var(--duracion-transicion);
+}
+
+a.button:hover, input[type="submit"]:hover, button:hover {
+    background-color: var(--color-terciario);
+    transform: scale(1.05);
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--color-primario);
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"], input[type="date"] {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: var(--espaciado);
+    border: 1px solid var(--color-terciario);
+    border-radius: var(--radio-borde);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: var(--espaciado);
+}
+
+th, td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid var(--color-terciario);
+}
+
+th {
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+}
+
+tr:hover {
+    background-color: var(--color-exito);
+}
+
+.success, .error {
+    padding: var(--espaciado);
+    border-radius: var(--radio-borde);
+    font-size: 1rem;
+}
+
+.success {
+    background-color: var(--color-exito);
+    color: var(--color-primario);
+}
+
+.error {
+    background-color: var(--color-error);
+    color: var(--color-error-texto);
+}
