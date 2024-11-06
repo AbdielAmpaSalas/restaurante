@@ -27,6 +27,7 @@ $productos = obtenerProductos();
     <?php endif; ?>
 
     <center><a href="nuevo.php" class="button">Agregar Nuevo Producto</a></center><br><br>
+    <center><a href="../index.php" class="button">Volver a Inicio</a></center> <br><br>
 
     <h2>Lista de Productos</h2>
     <table>

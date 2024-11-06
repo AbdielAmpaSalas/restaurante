@@ -27,6 +27,7 @@ $clientes = obtenerClientes();
     <?php endif; ?>
 
     <center><a href="nuevo.php" class="button">Agregar Nuevo Cliente</a></center> <br><br>
+    <center><a href="../index.php" class="button">Volver a Inicio</a></center> <br><br>
 
     <h2>Lista de Clientes</h2>
     <table>
