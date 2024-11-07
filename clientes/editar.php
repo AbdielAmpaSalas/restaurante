@@ -44,10 +44,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <label>Correo: <input type="email" name="correo" value="<?php echo htmlspecialchars($cliente['correo']); ?>" required></label>
             <label>Teléfono: <input type="text" name="telefono" value="<?php echo htmlspecialchars($cliente['telefono']); ?>" required></label>
             <label>Dirección: <input type="text" name="direccion" value="<?php echo htmlspecialchars($cliente['direccion']); ?>" required></label>
-            <input type="submit" value="Actualizar Cliente">
+            <center><input type="submit" class="button button-agregar" value="Actualizar Cliente"></center><br>
         </form>
 
-        <a href="index.php" class="button">Volver a la lista de clientes</a>
+        <center><a href="index.php" class="button button-volver">Volver a la lista de clientes</a></center>
     </div>
 </body>
 </html>

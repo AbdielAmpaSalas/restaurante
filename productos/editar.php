@@ -45,10 +45,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <label>Descripción: <textarea name="descripcion" required><?php echo htmlspecialchars($producto['descripcion']); ?></textarea></label>
             <label>Categoría: <input type="text" name="categoria" value="<?php echo htmlspecialchars($producto['categoria']); ?>" required></label>
             <label>Disponible: <input type="checkbox" name="disponible" <?php echo $producto['disponible'] ? 'checked' : ''; ?>></label>
-            <input type="submit" value="Actualizar Producto">
+            <center><input type="submit" class="button button-agregar"value="Actualizar Producto"></center><br>
         </form>
 
-        <a href="index.php" class="button">Volver a la lista de productos</a>
+        <center><a href="index.php" class="button button-volver">Volver a la lista de productos</a></center>
     </div>
 </body>
 </html>

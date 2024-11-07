@@ -32,10 +32,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <label>Precio: <input type="number" step="0.01" name="precio" required></label>
             <label>Descripción: <textarea name="descripcion" required></textarea></label>
             <label>Categoría: <input type="text" name="categoria" required></label>
-            <center><input type="submit" value="Crear Producto"> <br> <br>
+            <center><input type="submit" class="button button-agregar" value="Crear Producto"><br>
         </form>
 
-        <a href="index.php" class="button">Volver a la lista de productos</a></center>
+        <a href="index.php" class="button button-volver">Volver a la lista de productos</a></center>
     </div>
 </body>
 </html>

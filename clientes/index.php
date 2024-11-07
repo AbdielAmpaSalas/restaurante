@@ -26,8 +26,8 @@ $clientes = obtenerClientes();
         </div>
     <?php endif; ?>
 
-    <center><a href="nuevo.php" class="button">Agregar Nuevo Cliente</a></center> <br><br>
-    <center><a href="../index.php" class="button">Volver a Inicio</a></center> <br><br>
+    <center><a href="nuevo.php" class="button button-agregar">Agregar Nuevo Cliente</a></center> <br>
+    <center><a href="../index.php" class="button button-volver">Volver a Inicio</a></center> <br>
 
     <h2>Lista de Clientes</h2>
     <table>
@@ -45,8 +45,8 @@ $clientes = obtenerClientes();
             <td><?php echo htmlspecialchars($cliente['telefono']); ?></td>
             <td><?php echo htmlspecialchars($cliente['direccion']); ?></td>
             <td class="actions">
-                <a href="editar.php?id=<?php echo $cliente['_id']; ?>" class="button">Editar</a>
-                <a href="index.php?accion=eliminar&id=<?php echo $cliente['_id']; ?>" class="button" onclick="return confirm('¿Estás seguro de que quieres eliminar este cliente?');">Eliminar</a>
+                <center><a href="editar.php?id=<?php echo $cliente['_id']; ?>" class="button button-editar">Editar</a></center>
+                <center><a href="index.php?accion=eliminar&id=<?php echo $cliente['_id']; ?>" class="button button-eliminar" onclick="return confirm('¿Estás seguro de que quieres eliminar este cliente?');">Eliminar</a></center>
             </td>
         </tr>
         <?php endforeach; ?>

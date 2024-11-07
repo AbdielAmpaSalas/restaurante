@@ -32,10 +32,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <label>Correo: <input type="email" name="correo" required></label>
             <label>Teléfono: <input type="text" name="telefono" required></label>
             <label>Dirección: <input type="text" name="direccion" required></label>
-            <center><input type="submit" value="Crear Cliente"></center> <br>
+            <center><input type="submit" class="button button-agregar" value="Crear Cliente"></center><br>
         </form>
 
-        <center><a href="index.php" class="button">Volver a la lista de clientes</a></center>
+        <center><a href="index.php" class="button button-volver">Volver a la lista de clientes</a></center>
     </div>
 </body>
 </html>

@@ -26,8 +26,8 @@ $productos = obtenerProductos();
         </div>
     <?php endif; ?>
 
-    <center><a href="nuevo.php" class="button">Agregar Nuevo Producto</a></center><br><br>
-    <center><a href="../index.php" class="button">Volver a Inicio</a></center> <br><br>
+    <center><a href="nuevo.php" class="button button-agregar">Agregar Nuevo Producto</a></center><br>
+    <center><a href="../index.php" class="button button-volver">Volver a Inicio</a></center><br>
 
     <h2>Lista de Productos</h2>
     <table>
@@ -47,8 +47,8 @@ $productos = obtenerProductos();
             <td><?php echo htmlspecialchars($producto['categoria']); ?></td>
             <td><?php echo $producto['disponible'] ? 'Sí' : 'No'; ?></td>
             <td class="actions">
-                <a href="editar.php?id=<?php echo $producto['_id']; ?>" class="button">Editar</a> <br><br>
-                <a href="index.php?accion=eliminar&id=<?php echo $producto['_id']; ?>" class="button" onclick="return confirm('¿Estás seguro de que quieres eliminar este producto?');">Eliminar</a>
+                <center><a href="editar.php?id=<?php echo $producto['_id']; ?>" class="button button-editar">Editar</a></center>
+                <center><a href="index.php?accion=eliminar&id=<?php echo $producto['_id']; ?>" class="button button-eliminar" onclick="return confirm('¿Estás seguro de que quieres eliminar este producto?');">Eliminar</a></center>
             </td>
         </tr>
         <?php endforeach; ?>

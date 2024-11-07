@@ -12,8 +12,8 @@
 
         <h2>Opciones Disponibles</h2>
         <ul>
-            <center><a href="clientes/index.php" class="button">Gestión de Clientes</a></center> <br><br>
-            <center><a href="productos/index.php" class="button">Gestión de Productos</a></center>
+            <center><a href="clientes/index.php" class="button button-cliente">Gestión de Clientes</a></center> <br>
+            <center><a href="productos/index.php" class="button button-producto">Gestión de Productos</a></center>
         </ul>
     </div>
 </body>
