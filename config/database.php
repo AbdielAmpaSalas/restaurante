@@ -5,4 +5,5 @@ $database = $mongoClient->selectDatabase('restaurante');
 $clientsCollection = $database->clientes;
 $productosCollection = $database->productos;
 $pedidosCollection = $database->pedidos;
+
 ?>
