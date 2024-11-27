@@ -13,7 +13,8 @@
         <h2>Opciones Disponibles</h2>
         <ul>
             <center><a href="clientes/index.php" class="button button-cliente">Gestión de Clientes</a></center> <br>
-            <center><a href="productos/index.php" class="button button-producto">Gestión de Productos</a></center>
+            <center><a href="productos/index.php" class="button button-producto">Gestión de Productos</a></center> <br>
+            <center><a href="pedidos/index.php" class="button button-pedido">Gestión de Pedidos</a></center> <br>
         </ul>
     </div>
 </body>

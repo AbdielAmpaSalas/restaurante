@@ -20,6 +20,7 @@
     /* Colores específicos para botones */
     --color-cliente: #3498db; /* Azul */
     --color-producto: #e74c3c; /* Rojo */
+    --color-pedido: #7488ff; /* morado */
     --color-agregar: #2ecc71; /* Verde */
     --color-volver: #f39c12; /* Naranja */
     --color-editar: #9b59b6; /* Morado */
@@ -89,6 +90,10 @@ h1, h2 {
     background-color: var(--color-producto);
     box-shadow: 0 4px 15px rgba(231, 76, 60, 0.4);
 }
+.button-pedido {
+    background-color: var(--color-producto);
+    box-shadow: 0 4px 15px rgb(117, 138, 255);
+}
 .button-agregar {
     background-color: var(--color-agregar);
     box-shadow: 0 4px 15px rgba(46, 204, 113, 0.4);
@@ -112,6 +117,7 @@ h1, h2 {
 }
 .button-cliente:hover { box-shadow: 0 6px 20px rgba(52, 152, 219, 0.6); }
 .button-producto:hover { box-shadow: 0 6px 20px rgba(231, 76, 60, 0.6); }
+.button-pedido:hover { box-shadow: 0 6px 20px rgb(116, 136, 255); }
 .button-agregar:hover { box-shadow: 0 6px 20px rgba(46, 204, 113, 0.6); }
 .button-volver:hover { box-shadow: 0 6px 20px rgba(243, 156, 18, 0.6); }
 .button-editar:hover { box-shadow: 0 6px 20px rgba(155, 89, 182, 0.6); }

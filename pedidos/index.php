@@ -55,15 +55,53 @@ require_once '../config/database.php';
                                 <th>Acciones</th>
                             </tr>
                         </thead>
+                        <tbody>
+                            <?php if (empty($pedidos)): ?>
+                                <tr>
+                                    <td> No se encontraron pedidos</td>
+                                </tr>
+                            <?php else: ?>
+                                <?php foreach($pedidos as $pedido): ?>
+                                    <tr>
+                                        <td>
+                                            <?php echo $pedido->_id; ?>
+                                        </td>
+                                        <td>
+                                            <?php echo $pedido->cliente; ?>
+                                        </td>
+                                        <td>
+                                            <?php
+                                                $fecha = new DateTime($pedido->fecha.' '.$pedido->hora);
+                                                echo $fecha->format('d/m/Y H:i'); 
+                                            ?>                                        
+                                        </td>
+                                        <td>
+                                            <?php echo $pedido->total; ?> 
+                                        </td>
+                                        <td>
+                                            <?php echo $pedido->estado; ?> 
+                                        </td>
+                                        <td>
+                                            <?php echo $pedido->estado_pago; ?> 
+                                        </td>
+                                        <td>
+                                            <!--Botón Ver -->
+                                            <a href="ver.php?<?php echo $pedido->_id; ?>">
+                                                Ver
+                                            </a>
+                                            <!--Botón Editar -->
+                                            <a href="ver.php?<?php echo $pedido->_id; ?>">
+                                                Editar
+                                            </a>
+                                        </td>
+                                    </tr>
+                                <?php endforeach; ?>
+                            <?php endif; ?>
+                        </tbody>
                     </table>
-
-
-
-
                 </div>
             </div>
          </div>
-
     </div>
 </body>
 </html>
